@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hacer Pedido | Dulce Deleite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+
+    <header class="header-simple">
+        <nav class="nav-glass contenedor">
+            <div class="logo-container">
+                <a href="proect.html" style="text-decoration: none;">
+                    <h2 class="logo-text">Dulce<span>Deleite</span></h2>
+                </a>
+            </div>
+            <div class="enlaces">
+                <a href="proect.html">Inicio</a>
+                <a href="maison.html">Sobre Nosotros</a>
+                <a href="coleccion.html">Colección</a>
+                <a href="eventos.html">Eventos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor seccion-pedido">
+        <div class="encabezado-minimal">
+            <span class="sub">Atención Personalizada</span>
+            <h1>Reserva tu Experiencia</h1>
+            <p style="max-width: 650px; margin: 2rem auto 0; color: var(--gris-texto); font-size: 1.6rem;">Completa el formulario y en menos de 2 horas te contactaremos para coordinar cada detalle de tu pedido.</p>
+        </div>
+
+        <div class="grid-pedido">
+            <!-- COLUMNA IZQUIERDA: INFORMACIÓN -->
+            <div class="info-contacto">
+                <!-- Tarjeta de la tienda -->
+                <div class="card-tienda">
+                    <img src="img/dulcedeleite.png" alt="Nuestra Tienda en Tarapoto">
+                    <div class="tienda-overlay">
+                        <span>Visítanos en nuestro rincón especial</span>
+                    </div>
+                </div>
+
+                <!-- Datos de contacto -->
+                <div class="detalles-lujo">
+                    <div class="detalle-item">
+                        <h4>📍 Ubicación</h4>
+                        <p>Tarapoto, San Martín, Perú</p>
+                        <p class="referencia">Referencia: Al frente de la RENIEC</p>
+                    </div>
+                    
+                    <div class="detalle-item">
+                        <h4>🕐 Horario de Atención</h4>
+                        <p>Lunes a Viernes: 9:00 AM - 8:00 PM</p>
+                        <p>Sábados: 10:00 AM - 6:00 PM</p>
+                        <p>Domingos: Solo eventos con reserva</p>
+                    </div>
+
+                    <div class="detalle-item">
+                        <h4>📞 Contacto Directo</h4>
+                        <p>WhatsApp: +51 991 407 565</p>
+                        <p>Email: info@dulcedeleite.com</p>
+                    </div>
+
+                    <!-- Beneficios -->
+                    <div class="beneficios-pedido">
+                        <div class="beneficio-item">
+                            <span>✅</span> Confirmación en 2 horas
+                        </div>
+                        <div class="beneficio-item">
+                            <span>🎂</span> Degustación sin costo
+                        </div>
+                        <div class="beneficio-item">
+                            <span>🚚</span> Delivery incluido
+                        </div>
+                        <div class="beneficio-item">
+                            <span>💳</span> Pago contra entrega
+                        </div>
+                    </div>
+
+                    <!-- Botones de acción -->
+                    <div class="botones-contacto">
+                        <a href="https://wa.me/991407565" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                            📱 Enviar Mensaje al WhatsApp
+                        </a>
+                        <a href="https://maps.app.goo.gl/svVjVVMmXbpPXFYK8" target="_blank" rel="noopener noreferrer" class="btn-maps">
+                            📍 Ver en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: FORMULARIO -->
+            <div class="formulario-container">
+                <form class="form-lujo" id="formulario-pedido">
+                    <h3>Datos del Pedido</h3>
+                    <p class="form-subtitulo">Todos los campos son obligatorios</p>
+                    
+                    <div class="input-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" placeholder="Ej. María García" required>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Teléfono</label>
+                            <input type="tel" placeholder="+51 999 888 777" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="correo@ejemplo.com" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Fecha del Evento</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Tipo de Evento</label>
+                            <select required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option>Boda</option>
+                                <option>Quinceañera</option>
+                                <option>Cumpleaños</option>
+                                <option>Bautizo</option>
+                                <option>Baby Shower</option>
+                                <option>Aniversario</option>
+                                <option>Evento Corporativo</option>
+                                <option>Fiesta Infantil</option>
+                                <option>Graduación</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Cantidad de Invitados</label>
+                            <select required>
+                                <option value="" disabled selected>Selecciona</option>
+                                <option>1 - 15 personas</option>
+                                <option>16 - 30 personas</option>
+                                <option>31 - 50 personas</option>
+                                <option>51 - 100 personas</option>
+                                <option>Más de 100 personas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Productos de Interés</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox"> Tarta Principal
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> Mesa de Postres
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> Bocaditos
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> Bebidas
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> Coffee Break
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> Paquete Completo
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Detalles Especiales (Sabores, colores, temática)</label>
+                        <textarea placeholder="Cuéntanos cómo imaginas tu dulce momento: colores, sabores favoritos, temas especiales..." required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="checkbox-terminos">
+                            <input type="checkbox" required> Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">✨ Enviar Solicitud de Reserva</button>
+                    
+                    <p class="form-nota">Te responderemos en máximo 2 horas hábiles. Si es urgente, contáctanos por WhatsApp.</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- SECCIÓN PREGUNTAS FRECUENTES -->
+        <section class="seccion-faq">
+            <div class="encabezado-minimal">
+                <span class="sub">Resolvemos tus dudas</span>
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>¿Con cuánto tiempo de anticipación debo hacer mi pedido?</summary>
+                    <p>Recomendamos reservar con al menos 5 días de anticipación para eventos pequeños y 15 días para bodas o grandes celebraciones. Sin embargo, hacemos lo posible por atender pedidos de última hora.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Ofrecen servicio de degustación?</summary>
+                    <p>¡Sí! Para pedidos superiores a S/ 200, ofrecemos una degustación gratuita de 3 mini postres en nuestro atelier. Debes coordinarla con al menos 3 días de anticipación.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Realizan envíos a otras ciudades?</summary>
+                    <p>Actualmente nuestro servicio de delivery cubre toda el área metropolitana de Tarapoto. Para eventos fuera de la ciudad, podemos coordinar con empresas de encomiendas bajo pedido especial.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué métodos de pago aceptan?</summary>
+                    <p>Aceptamos efectivo, transferencias bancarias (BCP, BBVA), Yape y Plin. Para eventos grandes solicitamos un adelanto del 50% y el resto contra entrega.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Puedo personalizar completamente los postres?</summary>
+                    <p>¡Absolutamente! Cada pedido es único. Puedes elegir sabores, colores, decoración y hasta incluir mensajes personalizados. Nuestro equipo de diseño te asesorará.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué pasa si necesito cancelar o reprogramar?</summary>
+                    <p>Entendemos los imprevistos. Puedes cancelar hasta 48 horas antes sin costo. Para reprogramar, solo contáctanos y buscamos una nueva fecha sin recargo adicional.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS BREVES -->
+        <section class="seccion-testimonios-pedido">
+            <div class="encabezado-minimal">
+                <span class="sub">Clientes felices</span>
+                <h2>Lo que dicen de nosotros</h2>
+            </div>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <p>"Hice mi pedido para mi boda y quedó perfecto. La tarta fue exactamente lo que soñé. ¡Gracias!"</p>
+                    <span class="testimonio-autor">— Andrea V.</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"Pedí un coffee break corporativo y mis colegas quedaron encantados. Profesionalismo y sabor."</p>
+                    <span class="testimonio-autor">— Ricardo M.</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"Los bocaditos para el cumpleaños de mi hija fueron un éxito. Frescos, bonitos y deliciosos."</p>
+                    <span class="testimonio-autor">— Carla S.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer-minimal">
+        <div class="contenedor footer-grid">
+            <div class="footer-brand">
+                <h2>Dulce<span>Deleite</span></h2>
+                <p>El placer de lo auténtico en cada detalle.</p>
+            </div>
+            <nav class="footer-links">
+                <div class="link-group">
+                    <h3>Explorar</h3>
+                    <ul>
+                        <li><a href="proect.html">Inicio</a></li>
+                        <li><a href="coleccion.html">Productos</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="maison.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacidad.html">Privacidad</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><a href="https://wa.me/991407565">WhatsApp</a></li>
+                        <li><a href="mailto:info@dulcedeleite.com">Email</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="copyright-bar">
+            <p>&copy; 2026 Dulce Deleite | Ingeniería de Sistemas - UNSM</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animación fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Navbar scroll
+        const nav = document.querySelector('.nav-glass');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 80);
+        });
+    </script>
+</body>
+</html>
